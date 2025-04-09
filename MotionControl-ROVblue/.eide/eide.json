@@ -1,0 +1,89 @@
+{
+  "name": "MotionControl",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "Core/Src",
+    "AutoControl",
+    "Device/Src",
+    "Drivers/STM32H7xx_HAL_Driver/Src"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "startup",
+        "files": [
+          {
+            "path": "startup_stm32h743xx.s"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "STM32H743VITx",
+  "packDir": ".pack/Keil/STM32H7xx_DFP.2.3.1",
+  "miscInfo": {
+    "uid": "306d2aaba96bb949dd0b2db4e8d42802"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M7",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "STM32H743VITx_FLASH.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32h7x",
+        "interface": "cmsis-dap-v1",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Core/Inc",
+          "Device/Inc",
+          "AutoControl",
+          "Drivers/STM32H7xx_HAL_Driver/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
+          "Drivers/CMSIS/Include",
+          "Drivers/CMSIS/Device/ST/STM32H7xx/Include"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32H743xx"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
