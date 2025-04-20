@@ -10,7 +10,6 @@ import subprocess
 import socket
 import json
 import threading
-
 from uv_msgs.msg import CabinState
 from uv_msgs.msg import PropellerThrust
 from uv_msgs.msg import RobotAxis
